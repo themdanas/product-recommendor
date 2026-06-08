@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+scikit-surprise
+mlflow
+fastapi
+uvicorn
+pyarrow
+boto3
+
+

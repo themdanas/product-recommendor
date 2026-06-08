@@ -1,0 +1,9 @@
+/artifacts
+__pycache__
+artifacts/data/raw_data.csv
+artifacts/data/processed_data.csv
+artifacts/data/r_data.csv
+artifacts/models/model.pkl
+.vscode
+notebooks/eda.ipynb
+save.py
