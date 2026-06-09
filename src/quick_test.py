@@ -2,9 +2,13 @@ from data_ingestion import DataIngestion
 from feature_engineering import FeatureEngineering
 from train import ModelTrainer
 from recommender import Recommender
+import pandas as pd
 
 
 df = DataIngestion().ingest_data()
+
+print(type(df))
+print(df.shape)
 
 df = FeatureEngineering().create_combined_text(df)
 
@@ -25,7 +29,7 @@ print("Recommendations:")
 
 results = rec.recommend(
     product,
-    df
+    top_k=10
 )
 
 for r in results:

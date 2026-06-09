@@ -30,9 +30,9 @@ class FeatureEngineering:
         df["combined_text"] = df["combined_text"].apply(
             self.clean_text
         )
-        df = df[
-    df["rating_number"] >= 5
-]
+
 
         return df
+    
+   
     #this is the change in the file

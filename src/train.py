@@ -19,6 +19,11 @@ class ModelTrainer:
 
     def train(self, df):
 
+        df.to_csv(
+        "artifacts/data/processed_data.csv",
+        index=False
+        )
+
         print("Creating TF-IDF vectors...")
 
         vectorizer = TfidfVectorizer(
@@ -64,3 +69,5 @@ class ModelTrainer:
         logger.info("Training completed")
 
         return nn_model
+    
+   

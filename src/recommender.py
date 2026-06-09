@@ -1,13 +1,16 @@
 import pickle
 import pandas as pd
 import numpy as np
+from pathlib import Path
+
+
 
 
 class Recommender:
 
     def __init__(self):
         self.df = pd.read_csv(
-            "artifacts/data/raw_data.csv"
+            "artifacts/data/processed_data.csv"
         )
 
         self.model = pickle.load(
@@ -30,6 +33,7 @@ class Recommender:
                 "rb"
             )
         )
+    
 
     def recommend(self,product_title,top_k=10):
 
@@ -61,3 +65,5 @@ class Recommender:
             )
 
         return recommendations
+    
+    
