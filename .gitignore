@@ -5,3 +5,4 @@ __pycache__
 notebooks/eda.ipynb
 save.py
 artifacts/
+artifacts/data/*.csv
