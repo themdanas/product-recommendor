@@ -1,11 +1,22 @@
-pandas
-numpy
-scikit-learn
-scikit-surprise
-mlflow
-fastapi
-uvicorn
-pyarrow
-boto3
+# Core Machine Learning & Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+pyarrow>=14.0.0
+datasets>=2.14.0
 
+# Experiment Tracking & MLOps
+mlflow>=2.8.0
 
+# API & Backend Serving
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+# Frontend UI
+streamlit>=1.28.0
+requests>=2.31.0
+
+# Testing & Quality
+pytest>=7.4.0
+httpx>=0.25.0
